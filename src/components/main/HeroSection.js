@@ -2,10 +2,12 @@ import Section from '../layout/Section';
 import Callout from './Callout';
 import Button from '../UI/Button';
 import LinkText from '../UI/LinkText';
+import Header from './Header'
 
 const HeroSection = () => {
     return (
         <>
+            <Header />
             <Section className='profileSection'>
                 <h2 className="about-heading leading-snug font-medium text-base text-zinc-900">
                     {'about me.'}

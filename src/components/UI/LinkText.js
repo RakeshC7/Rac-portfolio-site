@@ -3,9 +3,11 @@ import { ArrowUpRight } from 'lucide-react';
 
 const LinkText = (props) => {
 
+    const defaultClasses = 'flex flex-row items-center justify-start gap-0.5 text-base font-medium transition-all text-zinc-900 hover:text-zinc-700 hover:gap-1 active:text-blue-500';
+
     const classes = props.className
-        ? props.className + ' ' + 'flex flex-row items-center justify-start gap-0.5 text-base font-medium transition-all text-zinc-900 hover:text-zinc-700 hover:gap-1 active:text-orange-500'
-        : 'flex flex-row items-center justify-start gap-0.5 text-base font-medium transition-all text-zinc-900 hover:text-zinc-700 hover:gap-1 active:text-orange-500'
+        ? props.className + ' ' + defaultClasses
+        : defaultClasses;
 
     const targetValue = props.target ? props.target : '_blank';
 
