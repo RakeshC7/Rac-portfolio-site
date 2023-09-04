@@ -7,8 +7,8 @@ export const getExperiences = () => {
                 'Using Javascript, React, NextJS, TailwindCSS for building frontend and UI. Using Figma to design layouts and design system.',
             ],
             experienceOrg: {
-                name: 'Clamp',
-                link: 'https://joinclamp.com',
+                name: 'SHDesk Solutions Pvt. Ltd',
+                link: 'https://www.shdesk.com/',
                 websiteDisplayName: 'joinclamp.com',
             },
             experienceStatus: {
@@ -24,8 +24,8 @@ export const getExperiences = () => {
                 'Tools I work with during contribution: Figma, Git/GitHub, Slack, Netlify, Storybook, React, TailwindCSS, NextJS, Javascript.',
             ],
             experienceOrg: {
-                name: 'AsyncAPI Initiative',
-                link: 'https://asyncapi.com',
+                name: 'Technostacks infotech Pvt. Ltd.',
+                link: 'https://technostacks.com/',
                 websiteDisplayName: 'asyncapi.com',
             },
             experienceStatus: {
@@ -41,8 +41,8 @@ export const getExperiences = () => {
                 'Learned about tools and technologies such as GoLang, Redis and AWS.',
             ],
             experienceOrg: {
-                name: 'Economize.cloud',
-                link: 'https://economize.cloud',
+                name: 'Yudiz Solutions Pvt. Ltd.',
+                link: 'https://www.yudiz.com',
                 websiteDisplayName: 'economize.cloud',
             },
             experienceStatus: {
