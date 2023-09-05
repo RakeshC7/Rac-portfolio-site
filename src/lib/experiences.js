@@ -1,7 +1,7 @@
 export const getExperiences = () => {
     return [
         {
-            experienceTitle: 'frontend software engineer',
+            experienceTitle: 'senior frontend developer',
             experienceDescription: [
                 'Building a complete platform for buying/purchasing digital asset indexes and managing your crypto portfolio.',
                 'Using Javascript, React, NextJS, TailwindCSS for building frontend and UI. Using Figma to design layouts and design system.',
@@ -9,15 +9,15 @@ export const getExperiences = () => {
             experienceOrg: {
                 name: 'SHDesk Solutions Pvt. Ltd',
                 link: 'https://www.shdesk.com/',
-                websiteDisplayName: 'joinclamp.com',
+                websiteDisplayName: 'www.shdesk.com',
             },
             experienceStatus: {
-                startAt: 'Jan, 2023',
-                endAt: 'April, 2023',
+                startAt: 'May, 2021',
+                endAt: 'May, 2023',
             },
         },
         {
-            experienceTitle: 'Product Design Contributor',
+            experienceTitle: 'frontend developer',
             experienceDescription: [
                 'Started contributing as a design contributor and contributed to AsyncAPI website project using ReactJS and TailwindCSS.',
                 'Working on auditing existing components created using TailwindCSS support; Fixed UX for components, improved layouts for upcoming features.',
@@ -26,15 +26,15 @@ export const getExperiences = () => {
             experienceOrg: {
                 name: 'Technostacks infotech Pvt. Ltd.',
                 link: 'https://technostacks.com/',
-                websiteDisplayName: 'asyncapi.com',
+                websiteDisplayName: 'www.technostacks.com',
             },
             experienceStatus: {
-                startAt: 'Jan, 2022',
-                endAt: 'Sept 2022',
+                startAt: 'Apr, 2020',
+                endAt: 'Apr 2021',
             },
         },
         {
-            experienceTitle: 'Software Engineering Internship',
+            experienceTitle: 'web designer',
             experienceDescription: [
                 'Worked on the a dashboard application frontend using VueJS, SCSS and re-vamping the components of the same.',
                 'Builded a complete design system for all the applications using VueJS and SCSS.',
@@ -43,11 +43,11 @@ export const getExperiences = () => {
             experienceOrg: {
                 name: 'Yudiz Solutions Pvt. Ltd.',
                 link: 'https://www.yudiz.com',
-                websiteDisplayName: 'economize.cloud',
+                websiteDisplayName: 'www.yudiz.com',
             },
             experienceStatus: {
-                startAt: 'July, 2021',
-                endAt: 'Dec, 2021',
+                startAt: 'Jan, 2018',
+                endAt: 'Mar, 2020',
             },
         },
     ];

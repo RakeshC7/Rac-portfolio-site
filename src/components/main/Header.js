@@ -23,13 +23,13 @@ const Header = () => {
             </div>
             <div>
                 <h1 className="welcome-text leading-snug font-semibold text-2xl text-zinc-900">
-                    {'Namaste , I am Rakesh Chotaliya'}
+                    Namaste ! &nbsp; I am Rakesh Chotaliya
                 </h1>
-                <div className="leading-snug font-normal text-base text-zinc-500 mt-2">
+                <div className="leading-snug font-normal text-base text-zinc-500 mt-1">
                     <p>
-                        {'Frontend developer from India.'}
+                        {'a Frontend developer Based in Bangalore, India.'}
                     </p>
-                    <p>{new Date().getFullYear() - 1997 + ', he/him'}</p>
+                    {/* <p>{new Date().getFullYear() - 1997 + ', he/him'}</p> */}
                 </div>
             </div>
         </Section>
