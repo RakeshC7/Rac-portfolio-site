@@ -9,7 +9,7 @@ export const getExperiences = () => {
             experienceOrg: {
                 name: 'SHDesk Solutions Pvt. Ltd',
                 link: 'https://www.shdesk.com/',
-                websiteDisplayName: 'www.shdesk.com',
+                websiteDisplayName: 'shdesk.com',
             },
             experienceStatus: {
                 startAt: 'May, 2021',
@@ -26,7 +26,7 @@ export const getExperiences = () => {
             experienceOrg: {
                 name: 'Technostacks infotech Pvt. Ltd.',
                 link: 'https://technostacks.com/',
-                websiteDisplayName: 'www.technostacks.com',
+                websiteDisplayName: 'technostacks.com',
             },
             experienceStatus: {
                 startAt: 'Apr, 2020',
@@ -43,7 +43,7 @@ export const getExperiences = () => {
             experienceOrg: {
                 name: 'Yudiz Solutions Pvt. Ltd.',
                 link: 'https://www.yudiz.com',
-                websiteDisplayName: 'www.yudiz.com',
+                websiteDisplayName: 'yudiz.com',
             },
             experienceStatus: {
                 startAt: 'Jan, 2018',

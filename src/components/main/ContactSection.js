@@ -10,10 +10,12 @@ const ContactSection = () => {
             <h2 className="contact-heading leading-snug font-medium text-base text-zinc-900">
                 {'contact, socials.'}
             </h2>
-            <div className="project-item-list-wrapper mt-4 grid gap-4">
-                {getContacts()?.map((contact, contactIndex) => (
-                    <ContactItem {...contact} key={contactIndex} />
-                ))}
+            <div className="contact-item-list-wrapper mt-4 flex flex-wrap gap-x-7 gap-y-4">
+                {
+                    getContacts()?.map((contact, contactIndex) => (
+                        <ContactItem {...contact} key={contactIndex} />
+                    ))
+                }
             </div>
         </Section>
     );
@@ -26,7 +28,7 @@ const ContactItem = ({
     ...attr
 }) => {
 
-    const defaultClasses = 'contact-item flex flex-row items-center justify-start gap-4'
+    const defaultClasses = 'contact-item flex flex-row items-center justify-start gap-4 border-b-2 pb-1 hover:border-blue-300 transition-all'
     const classes = className ? className + ' ' + defaultClasses : defaultClasses;
     return (
         <div
