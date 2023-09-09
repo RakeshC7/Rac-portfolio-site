@@ -14,16 +14,17 @@ const getpathMap = () => {
         },
         {
             pathType: 'internal',
-            title: 'crafts',
+            title: 'crafts 🌱',
             link: '/crafts',
             isAvaliable: true,
-        },
-        {
-            pathType: 'internal',
-            title: 'newsletter 🌱',
-            link: '/newsletter',
-            isAvaliable: true,
         }
+        // ,
+        // {
+        //     pathType: 'internal',
+        //     title: 'newsletter 🌱',
+        //     link: '/newsletter',
+        //     isAvaliable: true,
+        // }
     ]
 }
 
