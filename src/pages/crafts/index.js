@@ -1,7 +1,7 @@
 import Section from './../../components/layout/Section';
-import ViewContainer from './../../components/layout/view-container';
+import ViewContainer from './../../components/layout/ViewContainer';
 import Header from './../../components/main/Header';
-import { getCrafts } from './../../lib/crafts';
+import getCrafts from './../../lib/crafts';
 import Link from 'next/link';
 
 const Crafts = () => {

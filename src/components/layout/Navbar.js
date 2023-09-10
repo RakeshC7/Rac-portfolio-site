@@ -18,7 +18,7 @@ const Navbar = () => {
                                 return (
                                     <li
                                         key={pathMapIndex}
-                                        className={pathName === pathMapItem?.link ? defaultNavbarListItem + ' ' + 'underline underline-offset-1' : defaultNavbarListItem}
+                                        className={pathName === pathMapItem?.link ? defaultNavbarListItem + ' ' + 'border-b-2 border-blue-300' : defaultNavbarListItem}
                                     >
                                         {pathMapItem?.link && (
                                             <Link

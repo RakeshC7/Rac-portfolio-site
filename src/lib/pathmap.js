@@ -4,19 +4,19 @@ const getpathMap = () => {
             pathType: 'internal',
             title: 'home',
             link: '/',
-            isAvaliable: true,
+            isAvailable: true,
         },
         {
             pathType: 'internal',
             title: 'blog',
             link: '/blog',
-            isAvaliable: true,
+            isAvailable: true,
         },
         {
             pathType: 'internal',
             title: 'crafts 🌱',
             link: '/crafts',
-            isAvaliable: true,
+            isAvailable: true,
         }
         // ,
         // {

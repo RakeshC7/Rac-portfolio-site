@@ -1,7 +1,7 @@
 import Section from './../../components/layout/Section';
-import ViewContainer from './../../components/layout/view-container';
+import ViewContainer from './../../components/layout/ViewContainer';
 import Header from './../../components/main/Header';
-import { getBlogs } from './../../lib/blogs';
+import getBlogs from './../../lib/blogs';
 import Link from 'next/link';
 
 const BlogView = () => {
