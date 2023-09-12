@@ -9,7 +9,7 @@ const Navbar = () => {
     let pathName = router?.pathname;
     const defaultNavbarListItem = 'navbar-option-item option-item-available text-base text-zinc-500 hover:text-zinc-600';
     return (
-        <nav className="navbar mt-12">
+        <nav className="navbar mt-12 z-50">
             <ViewContainer>
                 <ul className='navbar-options-list flex flex-row items-center justify-end gap-4'>
                     {

@@ -31,8 +31,8 @@ export const getProjects = () => {
         {
             projectTitle: 'GitHub inspired landing page',
             projectData: {
-                liveURL: 'https://yashsehgal.github.io/github-landing/',
-                githubURL: 'https://github.com/yashsehgal/github-landing',
+                liveURL: 'https://rakeshc7.github.io/github-landing/',
+                githubURL: 'https://github.com/rakeshc7/github-landing',
                 relatedLinks: [
                     {
                         label: 'Figma',

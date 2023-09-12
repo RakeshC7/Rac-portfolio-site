@@ -3,10 +3,24 @@ import ViewContainer from './../../components/layout/ViewContainer';
 import Header from './../../components/main/Header';
 import getBlogs from './../../lib/blogs';
 import Link from 'next/link';
+import MetaHead from '../../components/seo/MetaHead';
+import AnimatedBg from './../../components/main/AnimatedBg'
 
 const BlogView = () => {
     return (
         <>
+            <MetaHead
+                title={'Crafts | Rakesh Chotaliya'}
+                description={'A Collection of Hand-Crafted Frontend UI Components.'}
+                embedSource={{
+                    twitter:
+                        'https://ik.imagekit.io/o00zyvf99d/portfolioImage/seo/blogs.jpg?updatedAt=1694539293382&tr=w-1200%2Ch-675%2Cfo-auto',
+                    linkedin:
+                        'https://ik.imagekit.io/o00zyvf99d/portfolioImage/seo/blogs.jpg?updatedAt=1694539293382&tr=w-1200%2Ch-628%2Cfo-auto',
+                    og: 'https://ik.imagekit.io/o00zyvf99d/portfolioImage/seo/blogs.jpg?updatedAt=1694539293382',
+                }}
+            />
+            <AnimatedBg />
             <div
                 className="blog-view-container"
                 id="blog"

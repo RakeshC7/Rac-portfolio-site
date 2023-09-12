@@ -3,10 +3,12 @@ import ViewContainer from './../../components/layout/ViewContainer';
 import Header from './../../components/main/Header';
 import getCrafts from './../../lib/crafts';
 import Link from 'next/link';
+import AnimatedBg from './../../components/main/AnimatedBg'
 
 const Crafts = () => {
     return (
         <>
+            <AnimatedBg />
             <div className="crafts-view-container" id="crafts">
                 <ViewContainer>
                     <Header />

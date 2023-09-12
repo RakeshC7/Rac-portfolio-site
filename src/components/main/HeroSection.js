@@ -31,15 +31,15 @@ const HeroSection = () => {
                         }
                     </p>
                     <div className="flex flex-row items-center justify-start gap-4">
-                        <Button onClick={() => window.open('https://cal.com/yashsehgal')}>
+                        <Button onClick={() => window.open('https://cal.com/rakeshc7')}>
                             {'Schedule a meet / cal.com'}
                         </Button>
-                        <LinkText
+                        {/* <LinkText
                             href={'/resume'}
                             className="text-zinc-600 font-medium text-sm"
                         >
                             {'Resume'}
-                        </LinkText>
+                        </LinkText> */}
                     </div>
                 </Callout>
             </Section>

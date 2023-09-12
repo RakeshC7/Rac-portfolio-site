@@ -12,7 +12,7 @@ const MetaHead = ({
     return (
         <Head {...attr}>
             <title>{title}</title>
-            <link rel="shortcut icon" type='image' href={favicon} />
+            <link rel="shortcut icon" type='image' href={favicon.src} />
             <meta name="title" content={metaTitle} />
             <meta name="description" content={description} />
 
