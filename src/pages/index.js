@@ -14,10 +14,10 @@ export default function Home() {
 			<MetaHead />
 			<AnimatedBg />
 			<div className='main-view-container relative z-0'>
-				<ViewContainer className="grid grid-cols-1 items-start justify-start gap-12">
+				<ViewContainer className="mt-12 px-1 pt-5 pb-10 bg-white grid grid-cols-1 items-start justify-start gap-12">
 					<HeroSection />
 					<ExperienceSection />
-					<ProjectSection />
+					{/* <ProjectSection /> */}
 					<ContactSection />
 				</ViewContainer>
 			</div>

@@ -15,7 +15,7 @@ const HeroSection = () => {
                 <div className="about-content-wrapper leading-6 text-sm font-normal text-zinc-500 mt-4">
                     <p>
                         {
-                            'Hey! I am an Computer Engineer, learning how to build and design scalable websites and applications. My focus is to build with better user experience, design aesthetic, good developer experience and meaningful impact.'
+                            'Hey! I\'m a Computer Engineer with 5+ years of experience in web and app development. My love for tech drives my continuous learning and innovation. Beyond coding, I enjoy tea and chess, and I\'m eager to contribute to open source. Let\'s collaborate on your digital vision!'
                         }
                     </p>
                 </div>

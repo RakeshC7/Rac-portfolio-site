@@ -10,8 +10,8 @@ const BlogView = () => {
     return (
         <>
             <MetaHead
-                title={'Crafts | Rakesh Chotaliya'}
-                description={'A Collection of Hand-Crafted Frontend UI Components.'}
+                title={'Blogs | Rakesh Chotaliya'}
+                description={'Explore Design and Technical Blogs by Rakesh Chotaliya.'}
                 embedSource={{
                     twitter:
                         'https://ik.imagekit.io/o00zyvf99d/portfolioImage/seo/blogs.jpg?updatedAt=1694539293382&tr=w-1200%2Ch-675%2Cfo-auto',
@@ -25,7 +25,7 @@ const BlogView = () => {
                 className="blog-view-container"
                 id="blog"
             >
-                <ViewContainer>
+                <ViewContainer className='mt-12 pt-5'>
                     <Header />
                     <Section className='grid grid-cols-1 items-start justify-start gap-12'>
                         <div
@@ -36,12 +36,12 @@ const BlogView = () => {
                             <h2 className="about-heading leading-snug font-medium text-base text-zinc-900">
                                 {'blogs.'}
                             </h2>
-                            <ul className="blogs-list mt-8 grid grid-cols-1 gap-4">
+                            <ul className="blogs-list mt-8 grid gap-4">
                                 {getBlogs()?.map((blog, blogIndex) => {
                                     if (blog?.link) {
                                         return (
-                                            <li className="blog-item" key={blogIndex}>
-                                                <div className="blog-item__content-wrapper flex flex-col items-start justify-between gap-1">
+                                            <li className="blog-item bg-white" key={blogIndex}>
+                                                <div className="blog-item__content-wrapper flex flex-col items-start justify-between gap-1 h-full">
                                                     <Link
                                                         href={blog?.link}
                                                         target={
@@ -51,23 +51,34 @@ const BlogView = () => {
                                                             {blog?.title}
                                                         </h2>
                                                     </Link>
-                                                    <p className="blog-published-at text-sm font-normal text-zinc-500">
-                                                        {blog?.publishedAt?.date && (
-                                                            <span className="published-at__date">
-                                                                {blog?.publishedAt?.date}
-                                                            </span>
-                                                        )}
-                                                        {blog?.publishedAt?.month && (
-                                                            <span className="published-at__month">
-                                                                {blog?.publishedAt?.month}
-                                                            </span>
-                                                        )}
-                                                        {blog?.publishedAt?.year && (
-                                                            <span className="published-at__year">
-                                                                {blog?.publishedAt?.year}
-                                                            </span>
-                                                        )}
-                                                    </p>
+                                                    {
+                                                        blog?.description &&
+                                                        <p className='text-sm text-zinc-500 font-light mb-2'>{blog?.description}</p>
+                                                    }
+                                                    {
+                                                        <div className='flex justify-between items-center w-full'>
+                                                            <p className="blog-published-at text-xs font-normal text-zinc-600">
+                                                                {blog?.publishedAt?.date && (
+                                                                    <span className="published-at__date inline-block mr-1">
+                                                                        {blog?.publishedAt?.date}
+                                                                    </span>
+                                                                )}
+                                                                {blog?.publishedAt?.month && (
+                                                                    <span className="published-at__month inline-block mr-1">
+                                                                        {blog?.publishedAt?.month}
+                                                                    </span>
+                                                                )}
+                                                                {blog?.publishedAt?.year && (
+                                                                    <span className="published-at__year inline-block">
+                                                                        {blog?.publishedAt?.year}
+                                                                    </span>
+                                                                )}
+                                                            </p>
+                                                            <p className='text-xs font-normal text-zinc-900'>
+                                                                {blog?.tag}
+                                                            </p>
+                                                        </div>
+                                                    }
                                                 </div>
                                             </li>
                                         );

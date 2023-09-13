@@ -13,13 +13,30 @@
 
 html,
 body {
-  margin-bottom: 3rem;
   font-family: 'Outfit', sans-serif;
+}
+
+body {
+  margin-bottom: 3rem;
 }
 
 .view-container {
   @apply box-border mx-auto;
   @apply w-[900px] max-2xl:w-[800px] max-xl:w-[720px] max-lg:w-[640px] max-md:w-[560px] max-sm:w-[340px];
+}
+
+/* Blog listing Page CSS */
+@media (min-width: 640px) {
+  ul.blogs-list,
+  ul.crafts-list {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+ul.blogs-list > li,
+ul.crafts-list > li {
+  border: 1px solid #ddd;
+  padding: 20px 25px;
+  height: 100%;
 }
 
 .subscribe-to-newsletter-view-container > .view-container {
@@ -85,4 +102,12 @@ pre > code {
 iframe > .subscribe-btn {
   background-color: rgb(249 115 22);
   color: white;
+}
+
+img {
+  image-rendering: -moz-crisp-edges; /* Firefox */
+  image-rendering: -o-crisp-edges; /* Opera */
+  image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
 }

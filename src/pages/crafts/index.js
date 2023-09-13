@@ -3,20 +3,31 @@ import ViewContainer from './../../components/layout/ViewContainer';
 import Header from './../../components/main/Header';
 import getCrafts from './../../lib/crafts';
 import Link from 'next/link';
+import MetaHead from './../../components/seo/MetaHead';
 import AnimatedBg from './../../components/main/AnimatedBg'
 
 const Crafts = () => {
     return (
         <>
+            <MetaHead
+                title={'Crafts | Rakesh Chotaliya'}
+                description={'Handcrafted UI Components for Frontend Development to Choose From.'}
+                embedSource={{
+                    twitter:
+                        'https://ik.imagekit.io/o00zyvf99d/portfolioImage/seo/crafts.jpg?updatedAt=1694539293271&tr=w-1200%2Ch-675%2Cfo-auto',
+                    linkedin:
+                        'https://ik.imagekit.io/o00zyvf99d/portfolioImage/seo/crafts.jpg?updatedAt=1694539293271&tr=w-1200%2Ch-628%2Cfo-auto',
+                    og: 'https://ik.imagekit.io/o00zyvf99d/portfolioImage/seo/crafts.jpg?updatedAt=1694539293271',
+                }}
+            />
             <AnimatedBg />
             <div className="crafts-view-container" id="crafts">
                 <ViewContainer>
                     <Header />
                     <Section
-                        className='crafts-list-wrapper mt-8'
+                        className="crafts-list-wrapper mt-8"
                         id="crafts-list"
-                        aria-label="Crafts"
-                    >
+                        aria-label="Crafts">
                         <h2 className="about-heading leading-snug font-medium text-base text-zinc-900">
                             {'crafts.'}
                         </h2>
@@ -24,7 +35,7 @@ const Crafts = () => {
                             {getCrafts()?.map((craft, craftIndex) => {
                                 if (craft?.linkType === 'external' && craft?.craftLink) {
                                     return (
-                                        <li className="craft-item" key={craftIndex}>
+                                        <li className="craft-item bg-white" key={craftIndex}>
                                             <Link
                                                 href={craft?.craftLink}
                                                 target={craft?.craftSlug ? '_self' : '_blank'}>
@@ -39,7 +50,7 @@ const Crafts = () => {
                                     );
                                 } else if (craft?.linkType === 'internal' && craft?.craftSlug) {
                                     return (
-                                        <li className="craft-item" key={craftIndex}>
+                                        <li className="craft-item bg-white" key={craftIndex}>
                                             <Link
                                                 href={`/crafts/${craft?.craftSlug}`}
                                                 target={craft?.craftSlug ? '_self' : '_blank'}>

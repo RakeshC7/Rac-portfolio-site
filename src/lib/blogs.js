@@ -1,17 +1,22 @@
 const getBlogs = () => {
     return [
         {
-            title: 'Getting started with Design Systems Engineering',
+            title: 'React Resource Vault',
+            description: 'Master React\'s core concepts with comprehensive cheatsheets. Quick reference guide for React expertise.',
+            tag: 'React',
             linkType: 'external',
-            link: 'https://rakeshchotaliya.notion.site/Getting-started-with-Design-Systems-Engineering-00f9639dd68f4fd79701eb72ca5a1fec',
+            link: 'https://github.com/RakeshC7/React-Cheatsheets',
             publishedAt: {
-                year: 2021,
+                year: 2023,
+                month: 'Aug'
             },
         },
         {
-            title: 'Internship experience Economize.cloud',
+            title: 'HTML5 Boilerplate',
+            description: 'A fast, flexible and modern template for beginners and experts.',
+            tag: 'Html',
             linkType: 'external',
-            link: 'https://github.com/rakeshchotaliya/rakeshchotaliya/blob/main/experiences/economize-experience.md#internship-experience-economizecloud',
+            link: 'https://github.com/RakeshC7/HTML5-Boilerplate',
             publishedAt: {
                 year: 2021,
             },
