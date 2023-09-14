@@ -13,7 +13,6 @@ export default function Home() {
 			<AnimatedBg />
 			<div className='main-view-container relative z-0'>
 				<ViewContainer className="px-1 pb-10 bg-white grid grid-cols-1 items-start justify-start gap-12">
-					<h1>{process.env.NEXT_PUBLIC_RAKESH}</h1>
 					<HeroSection />
 					<ExperienceSection />
 					{/* <ProjectSection /> */}
