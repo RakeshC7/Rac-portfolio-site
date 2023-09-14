@@ -36,8 +36,8 @@ export const getExperiences = () => {
         {
             experienceTitle: 'web designer',
             experienceDescription: [
-                'Worked on the a dashboard application frontend using VueJS, SCSS and re-vamping the components of the same.',
-                'Builded a complete design system for all the applications using VueJS and SCSS.',
+                'Worked on the a dashboard application frontend using Angularjs, SCSS and re-vamping the components of the same.',
+                'Builded a complete design system for all the applications using Angularjs and SCSS.',
                 'Learned about tools and technologies such as Wordpress, Angular, AMP, Ionic2, Magento-design, jQuery, Sass/Less, FileZilla, Sketch.',
             ],
             experienceOrg: {

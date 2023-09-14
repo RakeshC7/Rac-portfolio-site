@@ -25,7 +25,7 @@ const BlogView = () => {
                 className="blog-view-container"
                 id="blog"
             >
-                <ViewContainer className='mt-12 pt-5'>
+                <ViewContainer>
                     <Header />
                     <Section className='grid grid-cols-1 items-start justify-start gap-12'>
                         <div

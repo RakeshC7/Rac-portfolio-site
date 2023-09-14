@@ -35,12 +35,12 @@ export const getContacts = () => {
                 url: 'https://cal.com/rakeshc7',
             },
         },
-        {
-            title: 'Resume',
-            link: {
-                display: 'rakeshchotaliya.com/resume',
-                url: '/resume',
-            },
-        },
+        // {
+        //     title: 'Resume',
+        //     link: {
+        //         display: 'rakeshchotaliya.com/resume',
+        //         url: '/resume',
+        //     },
+        // },
     ];
 };

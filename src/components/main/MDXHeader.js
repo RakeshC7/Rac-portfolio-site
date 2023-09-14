@@ -42,13 +42,13 @@ const MDXHeader = ({
                 <ViewContainer>
                     <Link
                         href={'/crafts'}
-                        className="text-zinc-500 flex flex-row items-center justify-start gap-1">
+                        className="text-zinc-500 flex flex-row items-center justify-start gap-1 max-sm:mb-3 ">
                         <ArrowLeft className="w-4 h-4" />
                         {'Back to crafts'}
                     </Link>
                     <Section className="flex flex-row items-center justify-between max-lg:flex-col max-lg:items-start max-lg:gap-4">
                         <div className="header-content-container grid grid-cols-1 items-start justify-start gap-2">
-                            <h1 className="craft-title leading-snug text-5xl max-lg:text-3xl max-md:text-2xl font-semibold">
+                            <h1 className="craft-title leading-snug text-5xl max-lg:text-3xl max-md:text-2xl max-sm:text-xl font-semibold">
                                 {craftHeaderData?.header}
                             </h1>
                             <p className="craft-description truncate  text-zinc-500 text-lg max-lg:text-base max-md:text-sm">
