@@ -8,6 +8,13 @@ const Navbar = () => {
     const router = useRouter();
     let pathName = router?.pathname;
     const defaultNavbarListItem = 'navbar-option-item option-item-available text-base text-zinc-500 hover:text-zinc-600';
+
+    // Function to check if a path should be considered active
+    const isPathActive = (path) => {
+        if (path === '/') return path === pathName;
+        return pathName.startsWith(path);
+    };
+
     return (
         <nav className="navbar mt-12 z-50">
             <ViewContainer>
@@ -15,10 +22,17 @@ const Navbar = () => {
                     {
                         getPathMap()?.map((pathMapItem, pathMapIndex) => {
                             if (pathMapItem?.isAvailable) {
+                                const isActive = isPathActive(pathMapItem?.link);
+
                                 return (
                                     <li
                                         key={pathMapIndex}
-                                        className={pathName === pathMapItem?.link ? defaultNavbarListItem + ' ' + 'border-b-2 border-blue-300' : defaultNavbarListItem}
+                                        className={
+                                            isActive
+                                                ? defaultNavbarListItem + ' border-b-2 border-blue-300'
+                                                : defaultNavbarListItem
+                                        }
+                                    // className={pathName === pathMapItem?.link ? defaultNavbarListItem + ' ' + 'border-b-2 border-blue-300' : defaultNavbarListItem}
                                     >
                                         {pathMapItem?.link && (
                                             <Link
