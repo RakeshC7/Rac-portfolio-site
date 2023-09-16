@@ -23,7 +23,6 @@ const Navbar = () => {
                         getPathMap()?.map((pathMapItem, pathMapIndex) => {
                             if (pathMapItem?.isAvailable) {
                                 const isActive = isPathActive(pathMapItem?.link);
-
                                 return (
                                     <li
                                         key={pathMapIndex}

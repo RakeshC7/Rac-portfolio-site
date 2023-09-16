@@ -69,7 +69,7 @@ code {
 }
 
 pre {
-  @apply bg-zinc-200 p-4 rounded-md overflow-x-scroll my-4;
+  @apply bg-zinc-200 p-4 rounded-md overflow-x-auto my-4;
   scroll-padding-block: 4px;
 }
 
