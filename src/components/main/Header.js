@@ -29,8 +29,7 @@ const Header = () => {
                 </h1>
                 <div className="leading-snug font-normal text-base text-zinc-500 mt-1">
                     <p className='max-w-lg'>
-                        {/* {'a Frontend developer Based in Bangalore, India.'} */}
-                        {'Passionate Frontend developer crafting exceptional web experiences, based in Bangalore, India.'}
+                        {'Passionate Senior Software Engineer crafting exceptional web experiences, based in Bangalore, India.'}
                     </p>
                     {/* <p>{new Date().getFullYear() - 1997 + ', he/him'}</p> */}
                 </div>

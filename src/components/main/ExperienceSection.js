@@ -1,6 +1,6 @@
 import Section from '../layout/Section';
 import LinkText from '../UI/LinkText';
-import Callout from './Callout';
+// import Callout from './Callout';
 import { getExperiences } from '../../lib/experiences';
 
 const ExperienceSection = () => {
@@ -69,26 +69,51 @@ const ExperienceItem = ({
                 </p>
             </div>
             <ul className="experience-description-list-content-wrapper mt-4 flex flex-col items-start justify-start gap-2 pl-3">
-                {experienceDescription?.map((descriptionItem, descriptionIndex) => (
-                    <li
-                        className="font-normal text-zinc-500 text-sm list-disc list-outside"
-                        key={descriptionIndex}>
-                        {descriptionItem}
-                    </li>
-                ))}
-                {experienceOrg?.name === 'AsyncAPI Initiative' && (
-                    <Callout>
-                        Was a part of AsyncAPI&apos;s first ever Mentorship Program, held in
-                        year 2022. Learn more{' '}
-                        <LinkText
-                            className="text-sm text-zinc-600"
-                            href={
-                                'https://github.com/asyncapi/community/discussions/376#discussioncomment-2890658'
-                            }>
-                            here
-                        </LinkText>
-                    </Callout>
-                )}
+            {experienceDescription?.map((descriptionItem, descriptionIndex) => {
+            if (Array.isArray(descriptionItem)) {
+            return (
+                <li
+                    className="font-normal text-zinc-500 text-sm list-disc list-outside"
+                    key={descriptionIndex}
+                >
+                    {descriptionItem.map((item, idx) => {
+                        // Check for tab character
+                        const tabIndex = item.indexOf('\t');
+                        if (tabIndex !== -1) {
+                            const boldText = item.slice(0, tabIndex).trim();
+                            const restText = item.slice(tabIndex + 1).trim();
+                            return (
+                                <div key={idx}>
+                                    <b className="text-sm text-zinc-600">{boldText}</b>
+                                    <div>{restText}</div>
+                                </div>
+                            );
+                        } else {
+                            // First item in array: bold, others: normal
+                            return (
+                                <div key={idx}>
+                                    {idx === 0 ? (
+                                        <b className="text-sm text-zinc-600">{item}</b>
+                                    ) : (
+                                        <span>{item}</span>
+                                    )}
+                                </div>
+                            );
+                        }
+                    })}
+                </li>
+            );
+            } else {
+            return (
+                <li
+                    className="font-normal text-zinc-500 text-sm list-disc list-outside"
+                    key={descriptionIndex}
+                >
+                    {descriptionItem}
+                </li>
+            );
+            }
+            })}
             </ul>
         </div>
     )

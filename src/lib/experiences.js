@@ -1,6 +1,30 @@
 export const getExperiences = () => {
     return [
         {
+            experienceTitle: 'Senior Software Engineer',
+            experienceDescription: [
+                'Delivered multiple projects using Next.js, React.js, Storybook, TailwindCSS, and Styled-components.',
+                [
+                    'NBC TV Network: \t Built a scalable bulk mailing system with Blast & Trigger flows. Implemented email encryption, autoscaling, and real-time delivery tracking.'
+                ],
+                [
+                    'Regeneron PVT. LTD. : \t Contributed to internal tools and dashboards using Flutter (iOS) and FastAPI. Integrated data from Dremio and PostgreSQL for research support tools.'
+                ],
+
+
+                
+            ],
+            experienceOrg: {
+                name: 'Agilisium Consulting',
+                link: 'https://www.agilisium.com/',
+                websiteDisplayName: 'agilisium.com',
+            },
+            experienceStatus: {
+                startAt: 'Oct, 2023',
+                endAt: 'Present',
+            },
+        },
+        {
             experienceTitle: 'senior frontend developer',
             experienceDescription: [
                 'Built a comprehensive e-commerce platform for cosmetics, complete with secure purchasing capabilities, and integrated video calling for doctor-patient consultations using Twilio.',
