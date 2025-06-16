@@ -11,7 +11,7 @@ export const getContacts = () => {
             title: 'X (Twitter)',
             link: {
                 display: '@_Rakeshc7',
-                url: 'https://twitter.com/_Rakeshc7',
+                url: 'https://x.com/_Rakeshc7',
             },
         },
         {
