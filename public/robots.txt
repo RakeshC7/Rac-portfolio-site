@@ -1,0 +1,41 @@
+# robots.txt for https://rakeshchotaliya.com
+# Last updated: 2025-06-16
+
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /register/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /private/
+Allow: /
+
+# Crawl-delay for bots that respect it (avoid server overload)
+Crawl-delay: 10
+
+# Specific rules for major bots
+User-agent: Googlebot
+Allow: /
+Disallow: /private/
+Disallow: /temp/
+Crawl-delay: 5
+
+User-agent: Bingbot
+Allow: /
+Disallow: /temp/
+Crawl-delay: 5
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://rakeshchotaliya.com/sitemap.xml
