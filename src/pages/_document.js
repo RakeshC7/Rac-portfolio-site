@@ -1,5 +1,6 @@
 import { Html, Head, Main, NextScript } from 'next/document';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+// import { Analytics } from '@vercel/analytics/next';
 
 export default function Document() {
   const googleAnalyticsKey = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS;
@@ -27,6 +28,7 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
+        {/* <Analytics /> */}
         <SpeedInsights />
       </body>
     </Html>
