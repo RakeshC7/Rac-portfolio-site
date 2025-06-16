@@ -3,8 +3,8 @@ import favicon from './../../public/media/favicon.ico';
 
 const MetaHead = ({
     title = 'Rakesh Chotaliya',
-    metaTitle = 'Rakesh Chotaliya | Front-end Developer based in Bengaluru, India.',
-    description = 'Embark on my Frontend Development journey, showcasing past projects and the realm of React, JS, wordpress, ionic and CSS. Join me in my digital world—Let\'s connect!',
+    metaTitle = 'Rakesh Chotaliya | Senior Software Engineer based in Bengaluru, India.',
+    description = 'Embark on my Software Engineering journey, showcasing past projects and the realm of React, JS, wordpress, ionic and CSS. Join me in my digital world—Let\'s connect!',
     site = 'https://rakeshchotaliya.com/',
     embedSource = 'default',
     ...attr
